@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Activity Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Student Activity Tracker</h1>
+    <p>Track your daily learning activities</p>
+</header>
+
+<div class="container">
+
+    <h2>Activity List</h2>
+
+    <table id="activityTable">
+        <tr>
+            <th>Activity</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+
+        <tr>
+            <td>HTML Practice</td>
+            <td>Learn basic HTML tags</td>
+            <td class="status">Pending</td>
+            <td><button onclick="completeTask(this)">Complete</button></td>
+        </tr>
+
+        <tr>
+            <td>CSS Styling</td>
+            <td>Create page design</td>
+            <td class="status">Pending</td>
+            <td><button onclick="completeTask(this)">Complete</button></td>
+        </tr>
+
+        <tr>
+            <td>JavaScript Basics</td>
+            <td>Learn DOM manipulation</td>
+            <td class="status">Pending</td>
+            <td><button onclick="completeTask(this)">Complete</button></td>
+        </tr>
+
+        <tr>
+            <td>Mini Project</td>
+            <td>Build a small web app</td>
+            <td class="status">Pending</td>
+            <td><button onclick="completeTask(this)">Complete</button></td>
+        </tr>
+
+    </table>
+
+    <h3 id="progress">0 out of 4 activities completed</h3>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
